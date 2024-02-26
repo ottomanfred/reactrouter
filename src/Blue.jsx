@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function Blue() {
   return (
-    <div>Blue</div>
+    <div className='blue'>Blue</div>
   )
 }
