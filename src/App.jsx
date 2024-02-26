@@ -1,18 +1,10 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import { RouterProvider } from "react-router-dom";
+import router from "./router";
+
 import "./App.css";
 
-function App() {
-  return (
-    <>
-      <div id="container">
-        <h1>Hello React Router!</h1>
-        <div id="navbar">{/* navigation here */}</div>
-        <div id="main-section">{/* routes here */}</div>
-      </div>
-    </>
-  );
+export default function App() {
+  // <RouterProvider> will render the element based on the routes
+  // as defined in the `router` variable
+  return <RouterProvider router={router} />;
 }
-
-export default App;
